@@ -7,5 +7,7 @@
   "moremoremore.configuration.items": "Item List",
   "moremoremore.configuration.logDirtBlock": "Log Dirt Block",
   "moremoremore.configuration.magicNumberIntroduction": "Magic Number Text",
-  "moremoremore.configuration.magicNumber": "Magic Number"
+  "moremoremore.configuration.magicNumber": "Magic Number",
+
+  "item.moremoremore.item_charm": "Item Charm"
 }
