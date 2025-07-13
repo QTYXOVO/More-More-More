@@ -36,4 +36,4 @@ gradlew build
 - `gradlew clean` - 清理构建文件
 
 ## 许可证
-本项目采用 LGPL 许可证 - 详情参见 LICENSE 文件
+本项目采用 LGPL v2.1 许可证 - 详情参见 LICENSE 文件
