@@ -4,6 +4,7 @@
 *.iml
 *.iws
 *.ipr
+.trae/
 
 # Build directories
 build/

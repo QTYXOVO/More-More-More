@@ -12,6 +12,11 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.TooltipFlag;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
+import com.mojang.blaze3d.platform.InputConstants;
+import net.minecraft.client.Minecraft;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -93,6 +98,22 @@ public class MoreMoreMore {
     public static class CharmItem extends Item {
         public CharmItem(Properties properties) {
             super(properties);
+        }
+
+        @Override
+        @OnlyIn(Dist.CLIENT)
+        public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+            super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+            Minecraft minecraft = Minecraft.getInstance();
+            if (minecraft != null) {
+                boolean shiftDown = InputConstants.isKeyDown(minecraft.getWindow().getWindow(), InputConstants.KEY_LSHIFT) ||
+                                   InputConstants.isKeyDown(minecraft.getWindow().getWindow(), InputConstants.KEY_RSHIFT);
+                if (shiftDown) {
+                    tooltipComponents.add(Component.translatable(this.getDescriptionId() + ".description"));
+                } else {
+                    tooltipComponents.add(Component.translatable("item.moremoremore.item_charm.shift_hint"));
+                }
+            }
         }
 
         public void onUse(Player player, ItemStack stack) {

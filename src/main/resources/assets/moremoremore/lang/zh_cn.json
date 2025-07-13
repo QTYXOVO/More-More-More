@@ -1,3 +1,5 @@
 {
-  "item.moremoremore.item_charm": "物品护符"
+  "item.moremoremore.item_charm": "物品护符",
+  "item.moremoremore.item_charm.description": "物品护符可以在死亡后保留你身上的物品复活\r\n但是只能使用三次且必须放在背包里",
+  "item.moremoremore.item_charm.shift_hint": "按Shift显示详情"
 }

@@ -9,5 +9,7 @@
   "moremoremore.configuration.magicNumberIntroduction": "Magic Number Text",
   "moremoremore.configuration.magicNumber": "Magic Number",
 
-  "item.moremoremore.item_charm": "Item Charm"
+  "item.moremoremore.item_charm": "Item Charm",
+  "item.moremoremore.item_charm.description": "The Charm Item preserves your inventory upon death\nbut can only be used three times and must be in your inventory.",
+  "item.moremoremore.item_charm.shift_hint": "Press Shift for details"
 }

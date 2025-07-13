@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "moremoremore:textures/item/item_charm"
+    "layer0": "moremoremore:item/item_charm"
   }
 }
